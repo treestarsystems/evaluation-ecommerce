@@ -38,10 +38,10 @@ export class ProductController {
     return product;
   }
 
-  // @Delete('/:id')
-  // async deleteProduct(@Param('id') id: string) {
-  //   const product = await this.productService.deleteProduct(id);
-  //   if (!product) throw new NotFoundException('Product does not exist');
-  //   return product;
-  // }
+  @Delete('/:id')
+  async deleteProduct(@Param('id') id: string) {
+    const product = await this.productService.deleteProduct(id);
+    if (!product) throw new NotFoundException('Product does not exist');
+    return product;
+  }
 }

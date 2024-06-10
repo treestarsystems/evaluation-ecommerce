@@ -48,8 +48,8 @@ export class ProductService {
     return updatedProduct;
   }
 
-  // async deleteProduct(id: string): Promise<any> {
-  //   const deletedProduct = await this.productModel.findByIdAndRemove(id);
-  //   return deletedProduct;
-  // }
+  async deleteProduct(id: string): Promise<any> {
+    const deletedProduct = await this.productModel.findByIdAndDelete(id);
+    return deletedProduct;
+  }
 }

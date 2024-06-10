@@ -1,5 +1,5 @@
 ## Requirements: System
-# MacOS: [Install Documentation](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/)
+### MacOS: [Install Documentation](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/)
 ```bash
 xcode-select --install
 brew tap mongodb/brew
@@ -8,7 +8,9 @@ brew install mongodb-community@7.0
 brew services start mongodb-community@7.0
 ```
 
-## Installation
+### Windows: [Install Documentation](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/)
+
+## Requirements: App
 
 ```bash
 $ npm install
